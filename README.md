@@ -30,6 +30,9 @@ gsutil 4.34
 ```
 $ docker-compose build
 ```
+```
+$ docker-compose run --rm php composer install
+```
 
 ### .env作成
 ```
@@ -43,8 +46,9 @@ $ docker-compose run --rm php php artisan key:generate
 
 ### 実行
 ```
-$ docker-compose run
+$ docker-compose up
 ```
+- http://localhost:8000/
 
 ## GAEにデプロイ
 ### app.yamlにAPP_KEY設定
